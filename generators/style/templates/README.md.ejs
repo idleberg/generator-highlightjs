@@ -1,0 +1,30 @@
+# @highlightjs/<%= props.type %>-<%= props.slug %>
+
+[![npm](https://flat.badgen.net/npm/license/@highlightjs/<%= props.type %>-<%= props.slug %>)](https://www.npmjs.org/package/@highlightjs/<%= props.type %>-<%= props.slug %>)
+[![npm](https://flat.badgen.net/npm/v/@highlightjs/<%= props.type %>-<%= props.slug %>)](https://www.npmjs.org/package/@highlightjs/<%= props.type %>-<%= props.slug %>)
+[![CircleCI](https://flat.badgen.net/circleci/github/highlightjs/<%= props.type %>-<%= props.slug %>)](https://circleci.com/gh/highlightjs/<%= props.type %>-<%= props.slug %>)
+[![David](https://flat.badgen.net/david/dev/highlightjs/<%= props.type %>-<%= props.slug %>)](https://david-dm.org/highlightjs/<%= props.type %>-<%= props.slug %>?)
+
+<%= props.description %>
+
+## Usage
+
+Include the style-sheet in the header of your page
+
+**Example**
+
+```html
+<link href="<%= props.slug %>.css" rel="stylesheet">
+```
+
+Should you use Webpack with a loader for style-sheets, simply import style in your script
+
+**Example**
+
+```js
+import './<%= props.slug %>.css';
+```
+
+## License
+
+This work is licensed under the [<%= props.licenseName %>](<%= props.licenseURL %>)

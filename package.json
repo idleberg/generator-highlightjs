@@ -1,0 +1,51 @@
+{
+  "name": "@highlightjs/generator-highlightjs",
+  "version": "0.0.0",
+  "description": "Yeoman generator for Highlight.js languages and styles",
+  "license": "BSD-3-Clause",
+  "main": "generators/app",
+  "bin": {
+    "hljs": "./bin/hljs.js"
+  },
+  "files": [
+    "generators"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/highlightjs/generator.git"
+  },
+  "keywords": [
+    "yeoman-generator",
+    "highlight.js",
+    "hljs",
+    "highlightjs"
+  ],
+  "dependencies": {
+    "@sindresorhus/slugify": "^0.9.1",
+    "change-case": "^3.1.0",
+    "commander": "^3.0.2",
+    "semver": "^6.3.0",
+    "spdx-license-list": "^6.1.0",
+    "terminal-link": "^2.0.0",
+    "yeoman-environment": "^2.5.0",
+    "yeoman-generator": "^4.1.0",
+    "yosay": "^2.0.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.5.1",
+    "ejs-lint": "^0.3.0",
+    "husky": "^3.0.8"
+  },
+  "scripts": {
+    "lint:ejs": "ejslint generators/**/*.ejs",
+    "lint:js": "eslint generators/**/*.js",
+    "lint": "npm run lint:js && npm run lint:ejs",
+    "test": "npm run lint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run test"
+    }
+  }
+}

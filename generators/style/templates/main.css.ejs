@@ -1,0 +1,99 @@
+/**
+ * highlight.js style
+ *
+ * @see https://github.com/isagalaev/highlight.js
+ *
+ * @package: @highlightjs/<%= props.type %>-<%= props.slug %>
+ * @author:  <%= props.author %>
+ * @since:   <%= props.date %>
+ */
+
+:root {
+  --foreground: #abb2bf;
+  --background: #282c34;
+  --gray:       #5c6370;
+  --red:        #e06c75;
+  --orange:     #d19a66;
+  --yellow:     #e6c07b;
+  --green:      #98c379;
+  --teal:       #56b6c2;
+  --blue:       #61aeee;
+  --purple:     #c678dd;
+}
+
+.hljs {
+  background: var(--background);
+  color: var(--foreground);
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: var(--gray);
+  font-style: italic;
+}
+
+.hljs-doctag,
+.hljs-keyword,
+.hljs-formula {
+  color: var(--purple);
+}
+
+.hljs-section,
+.hljs-name,
+.hljs-selector-tag,
+.hljs-deletion,
+.hljs-subst {
+  color: var(--red);
+}
+
+.hljs-literal {
+  color: var(--teal);
+}
+
+.hljs-string,
+.hljs-regexp,
+.hljs-addition,
+.hljs-attribute,
+.hljs-meta-string {
+  color: var(--green);
+}
+
+.hljs-attr,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-type,
+.hljs-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-number {
+  color: var(--orange);
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link,
+.hljs-meta,
+.hljs-selector-id,
+.hljs-title {
+  color: var(--blue);
+}
+
+.hljs-built_in,
+.hljs-class .hljs-title {
+  color: var(--yellow);
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-link {
+  text-decoration: underline;
+}

@@ -1,0 +1,21 @@
+/**
+ * highlight.js syntax definition for the <%= props.name %> language
+ *
+ * @see https://github.com/isagalaev/highlight.js
+ *
+ * @package: @highlightjs/<%= props.type %>-<%= props.slug %>
+ * @author:  <%= props.author %>
+ * @since:   <%= props.date %>
+ */
+
+var module = module ? module : {};
+
+function hljsDefine<%= props.pascalCase %>(hljs) {
+  /* Syntax definitions */
+}
+
+module.exports = function(hljs) {
+  hljs.registerLanguage('<%= props.slug %>', hljsDefine<%= props.pascalCase %>);
+};
+
+module.exports.definer = hljsDefine<%= props.pascalCase %>;

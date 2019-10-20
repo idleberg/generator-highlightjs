@@ -1,0 +1,40 @@
+{
+  "name": "@highlightjs/<%= props.type %>-<%= props.slug %>",
+  "version": "0.0.0",
+  "description": "<%= props.description %>",
+  "author": "<%= props.author %>",
+  "license": "<%= props.license %>",
+  "main": "<%= props.slug %>.js",
+  "files": [
+    "<%= props.slug %>.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/highlightjs/<%= props.type %>-<%= props.slug %>.git"
+  },
+  "keywords": [
+    "highlight.js",
+    "highlightjs",
+    "highlightjs-language",
+    "<%= props.slug %>"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "^2.4.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.5.1",
+    "highlight.js": "^9.15.10",
+    "husky": "^3.0.8",
+    "util": "^0.12.1"
+  },
+  "scripts": {
+    "lint": "eslint <%= props.slug %>.js test/*.js",
+    "lint:fix": "eslint <%= props.slug %>.js test/*.js --fix",
+    "test": "ava ./test/index.js --verbose"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm run test"
+    }
+  }
+}

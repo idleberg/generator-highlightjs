@@ -1,0 +1,39 @@
+# @highlightjs/<%= props.type %>-<%= props.slug %>
+
+[![npm](https://flat.badgen.net/npm/license/@highlightjs/<%= props.type %>-<%= props.slug %>)](https://www.npmjs.org/package/@highlightjs/<%= props.type %>-<%= props.slug %>)
+[![npm](https://flat.badgen.net/npm/v/@highlightjs/<%= props.type %>-<%= props.slug %>)](https://www.npmjs.org/package/@highlightjs/<%= props.type %>-<%= props.slug %>)
+[![CircleCI](https://flat.badgen.net/circleci/github/highlightjs/<%= props.type %>-<%= props.slug %>)](https://circleci.com/gh/highlightjs/<%= props.type %>-<%= props.slug %>)
+[![David](https://flat.badgen.net/david/dev/highlightjs/<%= props.type %>-<%= props.slug %>)](https://david-dm.org/highlightjs/<%= props.type %>-<%= props.slug %>?)
+
+<%= props.description %>
+
+## Usage
+
+Include the highlight.js core library alongside the `<%= props.slug %>.js` script
+
+**Example**
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/highlight.js@9/lib/index.min.js"></script>
+<script src="<%= props.slug %>.js"></script>
+<script>
+    hljs.registerLanguage('<%= props.slug %>', window.hljsDefine<%= props.pascalCase %>);
+    hljs.initHighlightingOnLoad();
+</script>
+```
+
+Should you use a bundler such as Webpack or Rollup, simply require the core library and the language
+
+**Example**
+
+```js
+const hljs = require('highlight.js');
+const hljsDefine<%= props.pascalCase %> = require('@highlightjs/<%= props.type %>-<%= props.slug %>');
+
+hljsDefine<%= props.pascalCase %>(hljs);
+hljs.initHighlightingOnLoad();
+```
+
+## License
+
+This work is licensed under the [<%= props.licenseName %>](<%= props.licenseURL %>)
