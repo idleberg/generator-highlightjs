@@ -1,7 +1,7 @@
 # @highlightjs/generator
 
-[![npm](https://flat.badgen.net/npm/license/generator)](https://www.npmjs.org/package/@highlightjs/generator)
-[![npm](https://flat.badgen.net/npm/v/generator)](https://www.npmjs.org/package/@highlightjs/generator)
+[![npm](https://flat.badgen.net/npm/license/@highlightjs/generator)](https://www.npmjs.org/package/@highlightjs/generator)
+[![npm](https://flat.badgen.net/npm/v/@highlightjs/generator)](https://www.npmjs.org/package/@highlightjs/generator)
 [![CircleCI](https://flat.badgen.net/circleci/github/idleberg/generator)](https://circleci.com/gh/idleberg/generator)
 [![David](https://flat.badgen.net/david/dep/idleberg/generator)](https://david-dm.org/idleberg/generator)
 
