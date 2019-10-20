@@ -1,9 +1,9 @@
-# @highlightjs/generator-highlightjs
+# @highlightjs/generator
 
-[![npm](https://flat.badgen.net/npm/license/generator-highlightjs)](https://www.npmjs.org/package/@highlightjs/generator-highlightjs)
-[![npm](https://flat.badgen.net/npm/v/generator-highlightjs)](https://www.npmjs.org/package/@highlightjs/generator-highlightjs)
-[![CircleCI](https://flat.badgen.net/circleci/github/idleberg/generator-highlightjs)](https://circleci.com/gh/idleberg/generator-highlightjs)
-[![David](https://flat.badgen.net/david/dep/idleberg/generator-highlightjs)](https://david-dm.org/idleberg/generator-highlightjs)
+[![npm](https://flat.badgen.net/npm/license/generator)](https://www.npmjs.org/package/@highlightjs/generator)
+[![npm](https://flat.badgen.net/npm/v/generator)](https://www.npmjs.org/package/@highlightjs/generator)
+[![CircleCI](https://flat.badgen.net/circleci/github/idleberg/generator)](https://circleci.com/gh/idleberg/generator)
+[![David](https://flat.badgen.net/david/dep/idleberg/generator)](https://david-dm.org/idleberg/generator)
 
 ## Description
 
@@ -14,18 +14,12 @@
 Use your preferred [Node](https://nodejs.org/) package manager to install the generator
 
 ```sh
-npm i @highlightjs/generator-highlightjs -g
+npm i @highlightjs/generator -g
 ```
 
 ## Usage
 
 Create a directory in which you want to scaffold your new language or style. Next, run the generator and follow its instructions.
-
-```sh
-yo @highlightjs/highlightjs
-```
-
-As a shorthand, you can also make use of the CLI
 
 ```sh
 # Scaffold a new language
