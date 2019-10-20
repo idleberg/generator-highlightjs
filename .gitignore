@@ -8,9 +8,6 @@ npm-debug.log*
 yarn-error.log
 shrinkwrap.yaml
 
-# development
-tsconfig.tsbuildinfo
-
 # project specific
 .yo-rc.json
 todo.md
