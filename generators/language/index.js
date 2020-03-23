@@ -4,7 +4,7 @@ const slugify = require('@sindresorhus/slugify');
 const spdxLicenseList = require('spdx-license-list/full');
 const terminalLink = require('terminal-link');
 const { basename, extname, resolve } = require('path');
-const { pascal } = require('change-case');
+const { pascalCase } = require('change-case');
 
 // Create array of license choices
 const spdxCodes = Object.getOwnPropertyNames(spdxLicenseList).sort();
@@ -112,7 +112,7 @@ module.exports = class extends Generator {
       }
     ]).then( props => {
       props.type = 'language';
-      props.pascalCase = pascal(props.name);
+      props.pascalCase = pascalCase(props.name);
       props.licenseName = spdxLicenseList[props.license].name;
       props.licenseURL = spdxLicenseList[props.license].url;
       props.date = new Date().toISOString().split('T')[0];
