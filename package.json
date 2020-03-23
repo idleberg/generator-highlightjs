@@ -8,6 +8,7 @@
     "hljs": "./bin/hljs.js"
   },
   "files": [
+    "bin",
     "generators"
   ],
   "repository": {
